@@ -1,0 +1,35 @@
+{
+  "name": "animate_server",
+  "version": "1.0.0",
+  "description": "A realtime chat server using animated gif-like videos",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "npm run build-js",
+    "build-js": "browserify client/app.js -o public/app.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chicofos/animate_server.git"
+  },
+  "author": "Francisco Ochoa",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/chicofos/animate_server/issues"
+  },
+  "homepage": "https://github.com/chicofos/animate_server#readme",
+  "dependencies": {
+    "async": "^0.9.0",
+    "body": "^5.0.0",
+    "concat-stream": "^1.4.8",
+    "course": "0.0.1",
+    "data-uri-to-buffer": "0.0.3",
+    "st": "^0.5.3",
+    "uuid": "^2.0.1",
+    "webrtc2images": "^1.4.4",
+    "xhr": "^2.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^10.1.0"
+  }
+}
